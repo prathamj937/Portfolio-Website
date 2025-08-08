@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ExternalLink, Github, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { useCursor } from '../contexts/CursorContext';
+import fashion from '../images/fashion.png'; // adjust path accordingly
+import conversational from '../images/conversational.png'; // adjust path accordingly
+import churn from '../images/churn.png'; // adjust path accordingly
+import bankruptcy from '../images/bankruptcy.png'; // adjust path accordingly   
 
 interface Project {
   id: number;
@@ -46,9 +50,7 @@ const Projects: React.FC = () => {
       description: "Modern React-based e-commerce solution with AI-driven recommendations and agents",
       longDescription: "A cutting-edge e-commerce platform built with React and TypeScript, featuring AI-driven product recommendations and a personalized shopping experience. Utilizes Langchain for intelligent agents and Redis for caching to enhance performance and user engagement.",
       technologies: ["CNN", "TypeScript", "React", "Firebase", "Langchain", "Flask"],
-      image: "https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=800",
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      image: "https://imgs.search.brave.com/uPIFg3Tdl7HgI1H_zOvfaHcL0C89befEJc6de-88QHs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zLmFs/aWNkbi5jb20vQGlt/Zy9pMS9PMUNOMDF3/RFliU1cxYm9ZM3F5/N3huNl8hITYwMDAw/MDAwMDM1MTItMi10/cHMtMTIwMC04MDAu/cG5n",
       category: "AI"
     },
     {
@@ -57,7 +59,7 @@ const Projects: React.FC = () => {
       description: "Conversational AI chatbot with image recognition",
       longDescription: "An innovative chatbot application that combines image recognition with natural language processing to provide users with a conversational interface for identifying and discussing images.",
       technologies: ["HTML and CSS", "CNN", "RAG", "Langchain", "Redis"],
-      image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://imgs.search.brave.com/cA2o7lFAYtGzMXBGH5SkDqI3YDZc1_Z-ZRPRM6IcMjg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dGlkaW8uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy9jYXNwZXIt/bWFya2V0aW5nLWNo/YXRib3QtMS53ZWJw",
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/prathamj937/Conversational-image-recognition-chatbot",
       category: "AI"
@@ -68,7 +70,7 @@ const Projects: React.FC = () => {
       description: "Predicts customer churn using Deep learning",
       longDescription: "An elegant weather dashboard featuring interactive charts, forecasts, and location-based weather data. Built with React and integrated with multiple weather APIs for accurate predictions.",
       technologies: ["React", "TypeScipt", "Neural Network", "Flask"],
-      image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://imgs.search.brave.com/W7-CF8OMBChwoLlifT0Kf5KN7PGTTX-o_kten_CW2Nc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by9jdXN0b21l/ci1jaHVybi1zaG93/bi11c2luZy10ZXh0/LTI2MG53LTI0NDM2/MjEwNTkuanBn",
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/prathamj937/Customer-Churn-Prediction",
       category: "AI"
@@ -79,21 +81,10 @@ const Projects: React.FC = () => {
       description: "Machine learning model to predict bankruptcy of company",
       longDescription: "A sophisticated machine learning model designed to predict the likelihood of bankruptcy for companies based on financial data and historical trends. Utilizes advanced algorithms for accurate forecasting.",
       technologies: ["Machine Learning", "HTML and CSS", "Flask"],
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://imgs.search.brave.com/8t3pZ1C5yjhhmuhmA9txA4lovN79eq8hUqqJJFVOQBM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjMv/NjY5LzY5Mi9zbWFs/bC9iYW5rcnVwdGN5/LWNoYXB0ZXItMTMt/d3JpdGUtb24tYS1w/YXBlcndvcmstaXNv/bGF0ZWQtb24td29v/ZGVuLXRhYmxlLXBo/b3RvLkpQRw",
       liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/prathamj937/Bankruptcy-Prediction",
       category: "AI"
-    },
-    {
-      id: 5,
-      title: "Mobile Banking App",
-      description: "Secure mobile banking solution with biometric authentication",
-      longDescription: "A secure mobile banking application featuring biometric authentication, real-time transactions, budget tracking, and investment portfolio management.",
-      technologies: ["React Native", "Node.js", "MongoDB", "Biometric API"],
-      image: "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=800",
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      category: "mobile"
     },
     {
       id: 6,
@@ -101,7 +92,7 @@ const Projects: React.FC = () => {
       description: "DevOps project to set up a static site server on AWS",
       longDescription: "set up a basic Linux server (Ubuntu) on AWS EC2 to serve a static website using Nginx, and how I deployed my site from my local machine",
       technologies: ["Nginx", "HTML and CSS", "AWS EC2", "Ubuntu"],
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://imgs.search.brave.com/Fi4iUbJNfZlOZvn97ZS9ohKTAMrNhPHiKOTdFR8xBlM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9raW5z/dGEuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE4LzAzL3do/YXQtaXMtbmdpbngt/MTAyNHg1MTIucG5n",
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/prathamj937/Static-Site-Server",
       category: "Devops"
@@ -112,9 +103,9 @@ const Projects: React.FC = () => {
       description: "Data analysis project on unemployment trends",
       longDescription: "A comprehensive data analysis project that explores unemployment trends across different demographics and regions. Utilizes Python libraries for data visualization and statistical analysis.",
       technologies: ["Pandas", "Streamlit", "Seaborn", "Matplotlib"],
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://imgs.search.brave.com/zeKgk4XSe1m9r63p9f7S8cFHEyHzamC7DA7wIF7d2LI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/b25zLmdvdi51ay9l/bXBsb3ltZW50YW5k/bGFib3VybWFya2V0/L3Blb3BsZW5vdGlu/d29yay91bmVtcGxv/eW1lbnQvdGltZXNl/cmllcy9tZ3N4L2xt/cy9saW5lY2hhcnRp/bWFnZQ",
       liveUrl: "https://example.com",
-      githubUrl: "https://github.com/prathamj937/Unemployment-Analysis",
+      githubUrl: "https://github.com/prathamj937/Unemployment_Analysis",
       category: "Data Analysis"
     },
     {
@@ -123,7 +114,7 @@ const Projects: React.FC = () => {
       description: "Data analysis project on HR metrics",
       longDescription: "An insightful data analysis project focusing on HR metrics, employee performance, and retention strategies. Utilizes advanced data visualization techniques to present findings.",
       technologies: ["Pandas", "SQL", "Matplotlib"],
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://imgs.search.brave.com/6N6mfygmU6oR1eM0dtfmHpZ6Zh_luzCR-Fs8wZasg0s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzQv/MDM5LzczNS9zbWFs/bC9zdGF0aXN0aWNz/LWFuZC1kYXRhLWFu/YWx5c2lzLWludmVz/dG1lbnQtYnVzaW5l/c3MtYW5hbHlzaXMt/dXNpbmctY2hhcnRz/LWFuZC1ncmFwaHMt/bWFuLW1ha2luZy1k/aWFncmFtcy1nZW5l/cmF0ZWQtYnktYXJ0/aWZpY2lhbC1pbnRl/bGxpZ2VuY2UtZnJl/ZS1waG90by5qcGc",
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/prathamj937/HR-Data-Analysis",
       category: "Devops"
