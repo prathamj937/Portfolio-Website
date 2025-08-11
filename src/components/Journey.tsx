@@ -7,6 +7,10 @@ import flask from '../images/flask.png'; // adjust path accordingly
 import python from '../images/python.png'; // adjust path accordingly
 import cn from '../images/cn.png'; // adjust path accordingly
 import tcs from '../images/tcs.png'; // adjust path accordingly
+import tsak from '../images/techsaksham.png'
+import phack from '../images/phack.png'
+import shack from '../images/shack.png'
+import html from '../images/html.png'
 
 interface JourneyItem {
   id: number;
@@ -156,8 +160,36 @@ const Journey: React.FC = () => {
       category: "certification",
       tags: ["Virtual Internship", "Forage"]
     },
-    
-    
+    {
+      id: 12,
+      title: "Microsoft Techsaksham Foundation Course",
+      date: "March 2025",
+      location: "Gurgaon, India",
+      description: "Completed a Foundation Course on Microsoft Techsaksham, enhancing my skills in Modular Programming and Bash.",
+      image: tsak,
+      category: "certification",
+      tags: ["Course", "bash","Linux","Streamlit","OOPS"]
+    }, 
+    {
+      id: 13,
+      title: "Python Hackerrank",
+      date: "Feb 2024",
+      location: "Gurgaon, India",
+      description: "Completed a basic python evaluation from hackerrank and earned this ceertificate",
+      image: phack,
+      category: "certification",
+      tags: ["python"]
+    }, 
+    {
+      id: 14,
+      title: "SQL Hackerrank",
+      date: "Feb 2024",
+      location: "Gurgaon, India",
+      description: "Completed a basic SQL evaluation from hackerrank and earned this ceertificate",
+      image: shack,
+      category: "certification",
+      tags: ["Course", "bash","Linux","Streamlit","OOPS"]
+    }, 
 
   ];
 
