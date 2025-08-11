@@ -110,6 +110,17 @@ const Projects: React.FC = () => {
     },
     {
       id: 8,
+      title: "Intellisort",
+      description: "Document Classification using OCR",
+      longDescription: "Text is extracted from the document using Azure OCR and that text gets preprocessed and then it goes into the model for prediction",
+      technologies: ["Python", "OCR", "Bert", "Supervised Learning"],
+      image: "https://imgs.search.brave.com/hQAKx6ltW9NbsXiJPqKWViDDORmKDoD_Cazo1ISPTL0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzA2LzkxLzQ4/LzM2MF9GXzMwNjkx/NDg1MF9KbGN2cmV2/VjE5V1ZKZkFGRjlD/VzNXNVpzbUFMcGtF/ei5qcGc",
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/prathamj937/IntelliSort",
+      category: "AI"
+    },
+    {
+      id: 9,
       title: "HR Data Analysis",
       description: "Data analysis project on HR metrics",
       longDescription: "An insightful data analysis project focusing on HR metrics, employee performance, and retention strategies. Utilizes advanced data visualization techniques to present findings.",
@@ -117,8 +128,86 @@ const Projects: React.FC = () => {
       image: "https://imgs.search.brave.com/6N6mfygmU6oR1eM0dtfmHpZ6Zh_luzCR-Fs8wZasg0s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzQv/MDM5LzczNS9zbWFs/bC9zdGF0aXN0aWNz/LWFuZC1kYXRhLWFu/YWx5c2lzLWludmVz/dG1lbnQtYnVzaW5l/c3MtYW5hbHlzaXMt/dXNpbmctY2hhcnRz/LWFuZC1ncmFwaHMt/bWFuLW1ha2luZy1k/aWFncmFtcy1nZW5l/cmF0ZWQtYnktYXJ0/aWZpY2lhbC1pbnRl/bGxpZ2VuY2UtZnJl/ZS1waG90by5qcGc",
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/prathamj937/HR-Data-Analysis",
-      category: "Devops"
-    }
+      category: "Data Analysis"
+    },
+    {
+      id: 10,
+      title: "On-Chain Credit Scoring for Aave V2 Wallets",
+      description: "Credit scoring project for Aave V2 wallets",
+      longDescription: "Developed a machine learning-based credit scoring system for Aave V2 wallets by analyzing historical DeFi transaction data. The objective was to assign a credit score (0–1000) to each wallet to distinguish reliable users from those exhibiting risky, exploitative, or bot-like behavior, in the absence of traditional financial indicators.",
+      technologies: ["Machine Learning", "Python"],
+      image: "https://imgs.search.brave.com/qEwmg0zj469i6Riv1V4ptOI2oisBbUC-jS_nwZEMnCs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG5p/Lmljb25zY291dC5j/b20vaWxsdXN0cmF0/aW9uL3ByZW1pdW0v/dGh1bWIvY3JlZGl0/LXNjb3JlLWlsbHVz/dHJhdGlvbi1kb3du/bG9hZC1pbi1zdmct/cG5nLWdpZi1maWxl/LWZvcm1hdHMtLWZp/bmFuY2lhbC1zY29y/aW5nLWhpc3Rvcnkt/ZGFzaGJvYXJkLW9u/bGluZS1iYW5raW5n/LWxvb3B5LTAxLXBh/Y2stcGVvcGxlLWls/bHVzdHJhdGlvbnMt/NjA1OTI0Ny5wbmc",
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/prathamj937/credit_score_model",
+      category: "AI"  
+    },
+    {
+      id: 11,
+      title: "MdDoc",
+      description: "Converts Markdown files to docx without any formatting issues",
+      longDescription: "All the LLMs produce outputs in md format so to when we try to convert that md format into docx there are lot of formatting issues like table disruptions and text mmisalignment to resolve that issue I have  build this fastapi",
+      technologies: ["FastApi", "Python","lua"],
+      image: "https://imgs.search.brave.com/6UAlCWN87j6B74moIIe7EPd4cvLmuHEO6ts9IXOsnS8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dmVydG9wYWwuY29t/L3N0YXRpYy91aS9p/bWFnZS9jb252ZXJ0/ZXIvY29udmVydC1t/ZC10by1kb2N4Lndl/YnA",
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/prathamj937/Markdown-Files-to-Docx-Converter",
+      category: "Web"  
+    },
+    {
+      id: 12,
+      title: "Wine Prediction",
+      description: "Build a NN to predict the type of wine",
+      longDescription: "Basically this is a neural network model that takes in the chemical properties of the wine and predicts the type of wine it is ",
+      technologies: ["Deep Learning", "Python", "React"],
+      image: "https://imgs.search.brave.com/dT4uQll8gE4cyrouxHRvy182gqMezupb-unVNkHwfHw/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNi8w/OS8wOC8yMC8xMS93/aW5lLTE2NTUzMjVf/NjQwLmpwZw",
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/prathamj937/Wine-Predictor",
+      category: "AI"  
+    },
+    {
+      id: 13,
+      title: "Email-Rakshak",
+      description: "An AI-Powered Solution to Detect Spam Emails",
+      longDescription: "This project is an Email Spam Classifier designed with a user-friendly web interface and a robust machine learning backend. It leverages a 99% accurate classification model to detect spam emails efficiently and seamlessly.",
+      technologies: ["Machine Learning", "Python", "nltk", "HTML and CSS"],
+      image: "https://imgs.search.brave.com/ztgfQ0OeDU8U0s6GX38HSSJvC7Zo0C-1Bef5KC9mLUs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDY2/MzIwMTI1L3Bob3Rv/L2NsaWNraW5nLW9u/LWVtYWlsLXNwYW0t/Zm9sZGVyLXdpdGgt/MzcyLWl0ZW1zLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1p/bENSYmRPNFQtaks5/MTVxMFQzam5LOUEy/VnpMTzVaakh6TnNp/THVnNmJ3PQ",
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/prathamj937/credit_score_model",
+      category: "AI"  
+    },
+    {
+      id: 14,
+      title: "Car Price Predictor",
+      description: "An AI-Powered Solution to Detect Spam Emails",
+      longDescription: "This project is an Email Spam Classifier designed with a user-friendly web interface and a robust machine learning backend. It leverages a 99% accurate classification model to detect spam emails efficiently and seamlessly.",
+      technologies: ["Machine Learning", "Python", "nltk", "HTML and CSS"],
+      image: "https://imgs.search.brave.com/CrHVqbOKA5d9CcPwSPxIQu_U-Jso1Vq18BtfNOtUDTg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYmxhY2tjaXJj/bGVzLmNvbS9uZXdz/L2FydGljbGUtaGVy/b2VzLzgwLTIwMjQt/Y2FyLXByaWNlcy1o/ZWFkZXItc20uanBn",
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/prathamj937/Car_Prediction",
+      category: "AI"  
+    },
+    {
+      id: 15,
+      title: "IPL-Winning-Team-Predictor",
+      description: "An AI-Powered Solution to predict winning team in IPL",
+      longDescription: "This project involves building a predictive model for forecasting the winning team in IPL matches using a dataset sourced from Kaggle. The model leverages machine learning techniques to analyze historical data, incorporating crucial features such as player statistics, team composition, past performance, and match-specific conditions.",
+      technologies: ["Machine Learning", "Python", "HTML and CSS"],
+      image: "https://imgs.search.brave.com/JKnhcUsiguMmBJFFRtV_TxeguBw_IDL3tvzoimyoh88/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dGltZXNvZnNwb3J0/cy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMDEvSVBM/LUxvZ28tcG5nLndl/YnA",
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/prathamj937/IPL-team-winning-prediction",
+      category: "AI"  
+    },
+    {
+      id: 16,
+      title: "sentiment_analysis",
+      description: "An AI-Powered Solution to provide sentiment analysis of finance related companies and predicts their bankruptcy risk",
+      longDescription: "this project aims to predict whether the company will get bankrupted based on their sentiment score and provides latest articles related to the company for validation",
+      technologies: ["NLP", "Python", "Streamlit","Machine Learning"],
+      image: "https://imgs.search.brave.com/tJHVjNw5ElHpfFS_ks7fyCl9Vo27tcdCLXY3r5dcg4E/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjIv/NjAzLzk5MC9zbWFs/bC91c2Vycy1naXZl/LXJhdGluZ3MtdG8t/c2VydmljZS1leHBl/cmllbmNlLWN1c3Rv/bWVyLXNhdGlzZmFj/dGlvbi1jb25jZXB0/LXBvc2l0aXZlLWVt/b3Rpb24taGFwcHkt/c21pbGUtZmFjZS1m/aXZlLXN0YXJzLWFu/ZC1jcm93bi1mZWVk/YmFjay1zZXJ2aWNl/LXN1cnZleS1zdGFu/ZGFyZC1xdWFsaXR5/LWNlcnRpZmljYXRp/b24tcGhvdG8uanBn",
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/prathamj937/sentiment_analysis_bert",
+      category: "AI"  
+    },
+    
 
   ];
 
